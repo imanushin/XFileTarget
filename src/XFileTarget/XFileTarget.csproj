@@ -50,6 +50,7 @@
     <Compile Include="IListExtension.cs" />
     <Compile Include="LazyFileWriter.cs" />
     <Compile Include="NoData.cs" />
+    <Compile Include="Properties\ReSharperAnnotations.cs" />
     <Compile Include="XFileTarget.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
