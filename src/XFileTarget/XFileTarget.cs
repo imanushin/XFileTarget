@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using JetBrains.Annotations;
 using NLog;
 using NLog.Common;
 using NLog.Layouts;
@@ -23,13 +24,14 @@ namespace XFileTarget
             OptimizeBufferReuse = true;
         }
 
+        [UsedImplicitly]
         public Layout Layout { get; set; }
 
         protected override void InitializeTarget()
         {
             base.InitializeTarget();
 
-            _fileWriter = new LazyFileWriter(Layout);
+            _fileWriter = new LazyFileWriter(Layout, 100000, "%TEMP%\\XFileTarget\\DraftFile.txt");
         }
 
         protected override void Write(AsyncLogEventInfo logEvent)
