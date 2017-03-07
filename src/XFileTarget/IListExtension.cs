@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace XFileTarget
+namespace NLogTargets
 {
     internal static class ListExtension
     {

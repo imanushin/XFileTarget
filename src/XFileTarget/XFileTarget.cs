@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using JetBrains.Annotations;
 using NLog;
 using NLog.Common;
 using NLog.Layouts;
 using NLog.Targets;
+using NLogTargets.Properties;
 
-namespace XFileTarget
+namespace NLogTargets
 {
     [Target("XFile")]
     public sealed class XFileTarget : Target

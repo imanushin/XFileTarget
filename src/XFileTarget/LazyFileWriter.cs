@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using Microsoft.IO;
-using NLog;
 using NLog.Common;
 using NLog.Layouts;
 
-namespace XFileTarget
+namespace NLogTargets
 {
     internal sealed class LazyFileWriter : IDisposable
     {

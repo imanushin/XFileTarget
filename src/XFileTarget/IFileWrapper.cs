@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Threading.Tasks;
-using JetBrains.Annotations;
+using NLogTargets.Properties;
 
-namespace XFileTarget
+namespace NLogTargets
 {
     internal interface IFileWrapper : IDisposable
     {

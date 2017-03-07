@@ -1,10 +1,10 @@
 ﻿using System;
 using System.IO;
 using System.Threading.Tasks;
-using JetBrains.Annotations;
 using NLog.Common;
+using NLogTargets.Properties;
 
-namespace XFileTarget
+namespace NLogTargets
 {
     internal sealed class FileWrapper : IFileWrapper
     {
