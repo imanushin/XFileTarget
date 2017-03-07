@@ -32,7 +32,7 @@ namespace NLogTargets
             _eventsCollectingBuffer = _streamManager.GetStream();
         }
 
-        public void WriteBlockAsync(IList<AsyncLogEventInfo> events)
+        public void ScheduleBlockWriting(IList<AsyncLogEventInfo> events)
         {
             lock (_eventsCollectingLock)
             {

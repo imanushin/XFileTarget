@@ -9,7 +9,9 @@ using NLogTargets.Properties;
 namespace NLogTargets
 {
     [Target("XFile")]
+#pragma warning disable VSD0025 // Implements the most common configuration of naming conventions.
     public sealed class XFileTarget : Target
+#pragma warning restore VSD0025 // Implements the most common configuration of naming conventions.
     {
         //InternalLogger.Trace("AsyncWrapper '{0}': Throttled timer scheduled", this.Name);
 
@@ -45,7 +47,7 @@ namespace NLogTargets
                 PrecalculateVolatileLayouts(eventInfo);
             }
 
-            _fileWriter.WriteBlockAsync(logEvents);
+            _fileWriter.ScheduleBlockWriting(logEvents);
         }
 
         protected override void Write(LogEventInfo logEvent)

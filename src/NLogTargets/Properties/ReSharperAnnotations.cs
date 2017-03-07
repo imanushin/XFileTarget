@@ -414,7 +414,9 @@ namespace NLogTargets.Properties
     /// which should not be removed and so is treated as used.
     /// </summary>
     [MeansImplicitUse(ImplicitUseTargetFlags.WithMembers)]
+#pragma warning disable VSD0025 // Implements the most common configuration of naming conventions.
     internal sealed class PublicAPIAttribute : Attribute
+#pragma warning restore VSD0025 // Implements the most common configuration of naming conventions.
     {
         public PublicAPIAttribute() { }
 
@@ -883,14 +885,22 @@ namespace NLogTargets.Properties
     /// </summary>
     internal enum AssertionConditionType
     {
+#pragma warning disable VSD0025 // Implements the most common configuration of naming conventions.
         /// <summary>Marked parameter should be evaluated to true.</summary>
         IS_TRUE = 0,
+#pragma warning restore VSD0025 // Implements the most common configuration of naming conventions.
+#pragma warning disable VSD0025 // Implements the most common configuration of naming conventions.
         /// <summary>Marked parameter should be evaluated to false.</summary>
         IS_FALSE = 1,
+#pragma warning restore VSD0025 // Implements the most common configuration of naming conventions.
+#pragma warning disable VSD0025 // Implements the most common configuration of naming conventions.
         /// <summary>Marked parameter should be evaluated to null value.</summary>
         IS_NULL = 2,
+#pragma warning restore VSD0025 // Implements the most common configuration of naming conventions.
+#pragma warning disable VSD0025 // Implements the most common configuration of naming conventions.
         /// <summary>Marked parameter should be evaluated to not null value.</summary>
         IS_NOT_NULL = 3,
+#pragma warning restore VSD0025 // Implements the most common configuration of naming conventions.
     }
 
     /// <summary>

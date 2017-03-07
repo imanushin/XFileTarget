@@ -12,5 +12,8 @@
   </Rules>
   <Rules AnalyzerId="VSDiagnostics" RuleNamespace="VSDiagnostics">
     <Rule Id="VSD0029" Action="Info" />
+    <Rule Id="VSD0047" Action="None" />
+    <Rule Id="VSD0050" Action="None" />
+    <Rule Id="VSD0025" Action="Error" />
   </Rules>
 </RuleSet>
