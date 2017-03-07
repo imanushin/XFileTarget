@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26206.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFileTarget", "XFileTarget\XFileTarget.csproj", "{E12A89F0-ED97-49AD-9A01-992A1DEC3FD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLogTargets", "NLogTargets\NLogTargets.csproj", "{E12A89F0-ED97-49AD-9A01-992A1DEC3FD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
