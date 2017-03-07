@@ -58,6 +58,7 @@ namespace NLogTargets
             _fileWriter.FlushAsync().ContinueWith(t => asyncContinuation(t.Exception?.Flatten()));
         }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2213:DisposableFieldsShouldBeDisposed", MessageId = "_fileWriter")]
         protected override void Dispose(bool disposing)
         {
             if (disposing)

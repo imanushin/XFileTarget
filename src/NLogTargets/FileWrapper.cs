@@ -49,6 +49,7 @@ namespace NLogTargets
             throw new NotImplementedException();
         }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes")]
         [NotNull]
         public static IFileWrapper CreateForPath([NotNull] string filePath)
         {
